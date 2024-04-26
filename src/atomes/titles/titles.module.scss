@@ -1,0 +1,35 @@
+@import '../../assets/helpers/mixins.scss';
+@import '../../assets/helpers/variables.scss';
+
+
+.heading1{
+    font-size: 40px;
+    font-family: $Roboto;
+    color: $blue;
+    letter-spacing: -0.3px;
+    @include responsive(desktop){
+        font-size: 45px;
+    }
+}
+.heading2{
+    font: 35px;
+    color: $blue;
+    letter-spacing: -0.3px;
+    @include responsive(desktop){
+        font-size: 34px;
+    }
+
+}
+.heading3{
+    font: 18px;
+    color: $blue;
+    @include responsive(desktop){
+        font-size: 22px;
+    }
+}
+.heading4{
+    font: 16px;
+    color: $blue;
+    letter-spacing: 0.1px;
+
+}

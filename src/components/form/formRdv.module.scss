@@ -1,0 +1,78 @@
+@import "./../../assets/helpers/fonts";
+@import "./../../assets/helpers/variables";
+@import "./../../assets/helpers/mixins";
+
+
+.form_container{
+  max-width: 1280px;
+  margin: auto;
+  section{
+  
+    margin: 0 50px 50px 50px;
+    padding: 10px 50px 0 50px;
+    background: linear-gradient(to bottom, #003366, #003366c7);
+    box-shadow: 10px;
+    border-radius: 10px;
+
+  }
+  .btnn{
+    display: flex;
+    margin-bottom: 100px;
+  }
+}
+label {
+  display: block; 
+  margin-bottom: 10px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+
+}
+
+input {
+  width: 100%; 
+  padding: 10px; 
+  margin-bottom: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  font-size: 16px; 
+  text-align: center;
+
+}
+
+
+@media screen and (max-width: 768px) {
+  .form_container {
+    max-width: 100%; 
+  }
+}
+
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 1px solid #888;
+    border-radius: 10px;
+    z-index: 100;
+    .popup_content{
+    background-color: #ffffff;
+    margin: 5% auto;
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    @include responsive(tablet){
+      width: 50%;
+  }
+svg{
+  font-size: 30px;
+  path{
+    color: $yellow;
+    width: 30px;
+  }
+}
+}
+
+  }

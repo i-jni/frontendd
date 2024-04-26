@@ -1,0 +1,53 @@
+@import "./../../assets/helpers/fonts";
+@import "./../../assets/helpers/variables";
+@import "./../../assets/helpers/mixins";
+@import url(https://fonts.googleapis.com/earlyaccess/nicomoji.css);
+
+
+.header_container {
+    margin-bottom: 50px;
+  h1 {
+    font-family: $Moji;
+    color: $blue;
+    text-align: center;
+    font-size: 26px;
+    
+    @include responsive(desktop) {
+      font-size: 42px;
+    }
+    
+
+    &::first-letter {
+      color: $yellow;
+      // background-color: $blue;
+      border-radius: 60%;
+    }
+  }
+  
+  div {
+    width: 100%;
+    padding: 0px 10px;
+    display: flex;
+    
+    img {
+      width: 50%;
+    }
+  }
+  
+  h2 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    color: $blue;
+    font-size: 21px;
+    padding-left: 10px;
+    text-align: center;
+           @include responsive(tablet) {
+      font-size: 30px;
+    }
+        @include responsive(desktop) {
+      font-size: 42px;
+    }
+
+  }
+}

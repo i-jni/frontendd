@@ -1,0 +1,49 @@
+
+@import "./fonts";
+@import "./mixins";
+@import "./reset";
+@import "./variables";
+
+html,
+body {
+  overflow-x: hidden;
+  margin: 0;
+  background-color: #fafafa;
+  min-height: 100vh;
+}
+
+.centered {
+    margin: auto;
+    text-align: center;
+  }
+
+  .btn {
+    position: relative;
+    display: inline-block;
+    padding: 11px 20px;
+    border-radius: 8px;
+    border: none;
+    font: 1rem/1 "RobotoSlab";
+margin: auto;
+
+    line-height: 1;
+    cursor: pointer;
+
+  }
+
+  .blue {
+    background-color: $lightBlue;
+    color: white;
+    &:hover{
+      transform: scale(1.01);
+    }
+  }
+  .darkblue{
+background: #FFCC00;
+color: #003366;
+&:hover{
+  background: #003366;
+  color: #FFCC00;
+  }
+
+}
