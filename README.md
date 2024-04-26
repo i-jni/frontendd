@@ -41,7 +41,8 @@ Technologies Utilisées
     sass v1.75
     react-schedule-meeting
     emailjs-com
-
+    
+lien vercel : https://frontendd-rho.vercel.app/
 
   Conception :
   figma : https://www.figma.com/file/rWIzAvRQVENVyUCOwwYmXb/maquette?type=design&node-id=0%3A1&mode=design&t=D04fIK5Go0mB7Cve-1
